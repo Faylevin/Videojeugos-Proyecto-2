@@ -1,0 +1,4 @@
+repository "PseudoFlappy/PseudoFlappy@4674130452710@cloud"
+  path "/"
+    br "/main"
+    co "/main"
