@@ -15,11 +15,16 @@ public class Player : MonoBehaviour
 	
 	private float Velocidad = 3.0f , fuerzarebote = 4.0f;
 	private Button btnVolar;
-
+	
+	private int score;
+	public AudioSource reproductor;
+	public AudioClip sonidoPuntos,SonidoDeath,SonidoVuelo;
+	public Text txtScore;
 	
     // Start is called before the first frame update
 	void Awake()
 	{
+		score = 0;
 		if(instancia == null){
 			instancia = this;
 		}
@@ -44,9 +49,14 @@ public class Player : MonoBehaviour
 	        	yaVolo = false;
 	        	rb2d.linearVelocity = new Vector2(0,fuerzarebote);
 	        	anim.SetTrigger("volando"); //Revisar Igual que el proyecto
+	        	reproductor.clip = SonidoVuelo;
+	        	reproductor.Play();
 	        }
+	        
+	        
 	        if(rb2d.linearVelocity.y >= 0 ){
 	        	transform.rotation = Quaternion.Euler(0,0,0);
+	        
 	        }else{
 	        	float angulo = 0;
 	        	angulo = Mathf.Lerp(0, -90, -rb2d.linearVelocity.y / 21);
@@ -69,4 +79,29 @@ public class Player : MonoBehaviour
     private void Vuela(){
 	    yaVolo = true;
     }
+    
+	// Sent when another object enters a trigger collider attached to this object (2D physics only).
+	private void OnTriggerEnter2D(Collider2D obj)
+	{
+		if(obj.tag == "tuboGrupo"){
+			score++;
+			txtScore.text = score.ToString();
+			reproductor.clip = sonidoPuntos;
+			reproductor.Play();
+		}
+	}
+	
+	// Sent when an incoming collider makes contact with this object's collider (2D physics only).
+	private void OnCollisionEnter2D(Collision2D obj)
+	{
+		if(obj.gameObject.tag == "piso" || obj.gameObject.tag == "tubo"){
+			if(estaVivo){
+				estaVivo = false;
+				anim.SetTrigger("muere");
+				reproductor.clip = SonidoDeath;
+				reproductor.Play();
+			}
+		}
+	}
+	
 }
