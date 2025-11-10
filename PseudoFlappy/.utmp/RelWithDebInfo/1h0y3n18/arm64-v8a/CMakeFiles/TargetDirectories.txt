@@ -1,0 +1,8 @@
+C:/Users/demul/OneDrive/Documentos/Escuela/7to Semestre/Videojuegos/Proyecto2/Flappy/PseudoFlappy/.utmp/RelWithDebInfo/1h0y3n18/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/demul/OneDrive/Documentos/Escuela/7to Semestre/Videojuegos/Proyecto2/Flappy/PseudoFlappy/.utmp/RelWithDebInfo/1h0y3n18/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/demul/OneDrive/Documentos/Escuela/7to Semestre/Videojuegos/Proyecto2/Flappy/PseudoFlappy/.utmp/RelWithDebInfo/1h0y3n18/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/demul/OneDrive/Documentos/Escuela/7to Semestre/Videojuegos/Proyecto2/Flappy/PseudoFlappy/.utmp/RelWithDebInfo/1h0y3n18/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/demul/OneDrive/Documentos/Escuela/7to Semestre/Videojuegos/Proyecto2/Flappy/PseudoFlappy/.utmp/RelWithDebInfo/1h0y3n18/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+C:/Users/demul/OneDrive/Documentos/Escuela/7to Semestre/Videojuegos/Proyecto2/Flappy/PseudoFlappy/.utmp/RelWithDebInfo/1h0y3n18/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/demul/OneDrive/Documentos/Escuela/7to Semestre/Videojuegos/Proyecto2/Flappy/PseudoFlappy/.utmp/RelWithDebInfo/1h0y3n18/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/demul/OneDrive/Documentos/Escuela/7to Semestre/Videojuegos/Proyecto2/Flappy/PseudoFlappy/.utmp/RelWithDebInfo/1h0y3n18/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
